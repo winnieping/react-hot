@@ -1,0 +1,14 @@
+body{
+	margin:0;
+	padding:0;
+}
+.header {
+	height:100px;
+	background: url(../../image/logo.png) right center no-repeat;
+	background-size: 12%;
+  	background-color: pink;
+  	.navigation{
+  		line-height:100px;
+  		margin:0 20px;
+  	}
+}
