@@ -1,4 +1,4 @@
-import * as ActionTypes from '../../actions/info/ActionTypes';
+import * as ActionTypes from '../../actions/info/actionTypes';
 
 var initialState = {
 	desc:'info',

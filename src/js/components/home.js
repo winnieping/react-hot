@@ -1,11 +1,21 @@
 import React from 'react';
 
-var Home = React.createClass({
-	render: function () {
+class Home extends React.Component {
+	constructor(props) {
+		super(props);
+	}
+	render(){
 		return (
-			<div>Homegggg</div>
+			<div>Home</div>
 		);
 	}
-});
+}
+// var Home = React.createClass({
+// 	render: function () {
+// 		return (
+// 			<div>Homeddd</div>
+// 		);
+// 	}
+// });
 
 export default Home;

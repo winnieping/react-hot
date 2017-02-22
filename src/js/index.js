@@ -1,18 +1,23 @@
 import React from 'react';
-import { render } from 'react-dom';
-import {Router,browserHistory} from 'react-router';
-import rootRoute from './routers';
-//添加reducer
 import ReactDOM from 'react-dom';
-import {Provider} from 'react-redux';
-import configStore from './configStore';
 
-var store = configStore();
+import { AppContainer } from 'react-hot-loader';
+import App from './App';
 
-ReactDOM.render(
-	<Provider store={store}>
-		<Router history={browserHistory} routes={rootRoute}></Router>
-	</Provider>,
-	document.getElementById('reactapp')
-	
-);
+const render = (Component) => {
+	ReactDOM.render(
+		<AppContainer>
+			<Component></Component>
+		</AppContainer>,
+		document.getElementById('reactapp')
+	);
+};
+
+render(App);
+
+// Hot Module Replacement API
+if (module.hot) {
+  module.hot.accept('./App', () => {
+    render(App)
+  });
+}
