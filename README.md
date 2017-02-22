@@ -69,3 +69,5 @@ if (module.hot) {
 
 ##step5修改App.js 
 将App.js改为组件。
+
+###参考：https://webpack.js.org/guides/hmr-react/
